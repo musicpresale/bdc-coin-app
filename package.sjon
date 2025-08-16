@@ -1,0 +1,15 @@
+{
+  "name": "simulasi-bdc",
+  "version": "1.0.0",
+  "description": "Simulasi BDC Coin dengan backend Vercel KV",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "@vercel/kv": "^0.1.0"
+  },
+  "author": "Nama Kamu",
+  "license": "MIT"
+}
