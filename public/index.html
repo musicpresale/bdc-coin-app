@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulasi BDC Coin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Simulasi Otomatis BDC Coin</h1>
+
+<div class="stat">Harga Sekarang: <span id="priceNow"></span></div>
+<div class="stat">Market Cap: <span id="mcap"></span></div>
+<div class="stat">Supply Beredar: <span id="supplyNow"></span> BDC</div>
+<div class="stat">Volume Perdagangan: <span id="volNow"></span></div>
+
+<div id="transaksi">—</div>
+<div id="intervalStatus">—</div>
+
+<h3>Form Transaksi User</h3>
+<form id="userForm">
+  <label>Jumlah USD: <input type="number" id="usdAmount" value="100" min="1" step="1"/></label>
+  <button type="button" id="btnBuy">Beli</button>
+  <button type="button" id="btnSell">Jual</button>
+</form>
+
+<div id="portfolio">
+<h3>Portfolio User</h3>
+<div>Saldo USD: <span id="userUSD"></span></div>
+<div>Saldo BDC: <span id="userBDC"></span></div>
+</div>
+
+<h3>Log Siklus</h3>
+<table>
+<thead>
+<tr>
+<th>#</th><th>Sumber</th><th>Waktu</th><th>Arah</th><th>Volume USD</th>
+</tr>
+</thead>
+<tbody id="logBody"></tbody>
+</table>
+
+<script src="main.js"></script>
+</body>
+</html>
